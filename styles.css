@@ -91,6 +91,7 @@ input {
     justify-content: center;
     align-items: center;
     font-size: large;
+    background-color: white;
 }
 .child {
     grid-column: 2/4;
@@ -114,4 +115,28 @@ input {
 }
 li{
     margin: 20px 0px;
+}
+.other {
+    font-size: 1.2rem;
+}
+.other > img {
+    width: 100%;
+}
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 10px ;
+}
+.social img {
+    width: 30px;
+}
+.copy{ 
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(172, 161, 161);
+    padding: 10px 0px;
 }
