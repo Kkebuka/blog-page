@@ -37,7 +37,7 @@ header {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:500px 500px 500px 500px 500px 500px 500px ;
+    grid-template-rows:500px 500px 500px 500px 500px 500px 500px 80px;
     gap: 50px;
 
 }
@@ -45,9 +45,24 @@ header {
     background-color: aquamarine;
     grid-column: span 3;
 }
+.fourteen {
+    grid-column: span 3;
+    display: flex; 
+    gap: 20px;
+    padding-left: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
 .child {
     grid-column: 2/4;
 }
-.page-num {
+.other-post {
     margin: 0px 50px;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 600px;
+    background-color: blueviolet;
 }
