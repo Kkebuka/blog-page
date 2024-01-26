@@ -1,0 +1,53 @@
+html {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    gap: 100px;
+    align-items:  center;
+    padding: 0px 50px;
+}
+.links {
+    height: auto;
+    display: flex;
+    gap: 50px;
+    width: auto;
+    justify-content: flex-end;
+    font-size: 2rem;
+}
+.advert {
+    background-color: blueviolet;
+    display: flex;
+    height: 200px;
+    margin: 20px 50px;
+}
+.main {
+    margin: 0px 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    background-color: blue;
+    gap: 50px;
+}
+.card-one {
+    background-color: aliceblue;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:500px 500px 500px 500px 500px 500px 500px ;
+    gap: 50px;
+
+}
+.one {
+    background-color: aquamarine;
+    grid-column: span 3;
+}
+.child {
+    grid-column: 2/4;
+}
+.page-num {
+    margin: 0px 50px;
+}
