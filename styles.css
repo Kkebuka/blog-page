@@ -1,14 +1,19 @@
 html {
     width: 100%;
 }
-
+body {
+    padding: 0px 100px;
+    background-image: url('images/grey_sandbag.png');
+}
 header {
     width: 100%;
-    height: 50px;
+    height: 70px;
     display: flex;
     gap: 100px;
     align-items:  center;
-    padding: 0px 50px;
+}
+a {
+    text-decoration: none;
 }
 .links {
     height: auto;
@@ -16,35 +21,77 @@ header {
     gap: 50px;
     width: auto;
     justify-content: flex-end;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 .advert {
     background-color: blueviolet;
-    display: flex;
-    height: 200px;
-    margin: 20px 50px;
+    height: 300px;
+    margin: 20px 0px;
+}
+.advert  img {
+    width: 100%;
+    height:100%;
 }
 .main {
-    margin: 0px 50px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto;
-    background-color: blue;
+    background-image: url('images/grey_sandbag.png');
     gap: 50px;
+}
+.main a {
+    color: blue;
 }
 .card-one {
-    background-color: aliceblue;
+    background-color: white;
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:500px 500px 500px 500px 500px 500px 500px 80px;
+    grid-template-columns: 1.18fr 1fr;
+    grid-template-rows:auto 500px 500px 500px 500px 500px 500px 80px;
     gap: 50px;
-
+    background-image: url('images/grey_sandbag.png');
 }
 .one {
-    background-color: aquamarine;
     grid-column: span 3;
+    
 }
+.card-one img {
+    width: 100%;
+}
+.prop{ 
+    padding: 0px 50px;
+    background-color: white;
+}
+.card-two {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 600px 600px 400px 600px;
+    gap: 50px;   
+}
+.card-two > div {
+    background-color: white;
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input {
+    width: 80%;
+    height: 40%;
+    font-size: 1.3rem;
+    background-color: rgb(238, 237, 237);
+    border: 1px solid grey;
+}
+
+
+
+
+
+
+
+
+
 .fourteen {
     grid-column: span 3;
     display: flex; 
@@ -58,11 +105,15 @@ header {
     grid-column: 2/4;
 }
 .other-post {
-    margin: 0px 50px;
     width: auto;
     height: auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 600px;
     background-color: blueviolet;
+}
+.ads {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
 }
