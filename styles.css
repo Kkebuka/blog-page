@@ -83,15 +83,6 @@ input {
     background-color: rgb(238, 237, 237);
     border: 1px solid grey;
 }
-
-
-
-
-
-
-
-
-
 .fourteen {
     grid-column: span 3;
     display: flex; 
@@ -108,12 +99,19 @@ input {
     width: auto;
     height: auto;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 600px;
-    background-color: blueviolet;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    background-color: white;
 }
 .ads {
     display: flex;
     /* align-items: center; */
     justify-content: center;
+}
+.latest {
+    padding:50px 50px;
+    font-size: 1.2rem;
+}
+li{
+    margin: 20px 0px;
 }
