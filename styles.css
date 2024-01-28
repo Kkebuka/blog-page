@@ -2,15 +2,22 @@ html {
     width: 100%;
 }
 body {
-    padding: 0px 100px;
+    padding: 0px 7%;
     background-image: url('images/grey_sandbag.png');
 }
 header {
     width: 100%;
     height: 70px;
     display: flex;
-    gap: 100px;
     align-items:  center;
+    justify-content: space-between;
+    background-color: rgb(201, 190, 190);
+    flex-basis: 100px;
+    flex-shrink: 0;
+}
+header > img {
+    margin-left: 20px;
+    height: 70%;
 }
 a {
     text-decoration: none;
@@ -18,9 +25,9 @@ a {
 .links {
     height: auto;
     display: flex;
-    gap: 50px;
+    gap: 30px;
     width: auto;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     font-size: 1.7rem;
 }
 .advert {
@@ -33,14 +40,20 @@ a {
     height:100%;
 }
 .main {
+    width: auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto;
     background-image: url('images/grey_sandbag.png');
     gap: 50px;
+
 }
+/* .main > * { */
+    /* flex-basis: 700px; */
+    /* max-width: 50px; */
+/* } */
 .main a {
-    color: blue;
+    color: rgb(5, 37, 179);
 }
 .card-one {
     background-color: white;
@@ -59,17 +72,21 @@ a {
     width: 100%;
 }
 .prop{ 
-    padding: 0px 50px;
+    padding: 0px 15%;
     background-color: white;
 }
 .card-two {
+    width: auto;
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     grid-template-rows: 100px 600px 600px 400px 600px;
     gap: 50px;   
 }
 .card-two > div {
     background-color: white;
+}
+.card-two img {
+    width: 100%;
 }
 .search {
     display: flex;
