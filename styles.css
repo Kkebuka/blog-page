@@ -57,10 +57,11 @@ a {
 }
 .card-one {
     background-color: white;
+    font-family: 'Roboto', sans-serif;
     display: grid;
     width: 100%;
     grid-template-columns: 1.18fr 1fr;
-    grid-template-rows:auto 500px 500px 500px 500px 500px 500px 80px;
+    grid-template-rows:auto auto auto auto auto auto auto 80px;
     gap: 50px;
     background-image: url('images/grey_sandbag.png');
 }
@@ -70,6 +71,8 @@ a {
 }
 .card-one img {
     width: 100%;
+    height: auto;
+    image-orientation: inherit;
 }
 .prop{ 
     padding: 0px 15%;
@@ -118,7 +121,7 @@ input {
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 300px;
+    grid-template-rows: auto auto;
     background-color: white;
 }
 .ads {
@@ -135,9 +138,12 @@ li{
 }
 .other {
     font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
 }
 .other > img {
     width: 100%;
+    height: auto;
 }
 .social {
     display: flex;
@@ -156,4 +162,44 @@ li{
 footer {
     background-color: rgb(172, 161, 161);
     padding: 10px 0px;
+}
+
+@media (min-width: 1001px) and (max-width: 1090px) {
+
+    header a {
+        font-size: 1.4rem;;
+    }
+
+}
+@media (max-width: 1000px) {
+
+    header a {
+        font-size: 1.3rem;;
+    }
+
+}
+
+@media (max-width: 940px)  {
+
+    header a {
+        font-size: 1rem;
+    }
+
+    .card-one {
+        background-color: white;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .main {
+        gap: 20px;
+    }
+    .other-post {
+        display: flex;
+        flex-direction: column;
+    }
+    .card-one {
+        font-size: 1rem;
+    }
 }
