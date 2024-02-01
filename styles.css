@@ -123,7 +123,7 @@ input {
     grid-column: 2/4;
 }
 .other-post {
-    width: auto;
+    width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -178,6 +178,12 @@ footer {
 
 }
 @media (max-width: 1000px) {
+    .other-post {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
     body {
         padding: 0px 1%;
     }
@@ -232,6 +238,11 @@ footer {
 }
 
 @media (max-width: 940px)  {
+    
+    header > img {
+        margin-left: 20px;
+        height: 50%;
+    }
 
     header a {
         font-size: 1rem;
@@ -239,7 +250,12 @@ footer {
     .advert{
         display: none;
     }
-
+    h1 {
+        font-size: 1.4rem;
+    }
+    .card-one p {
+        font-size: 0.9rem;
+    }
     .card-one {
         background-color: white;
         font-family: 'Roboto', sans-serif;
@@ -262,10 +278,6 @@ footer {
     .main {
         gap: 20px;
         margin-top: 50px;   
-    }
-    .other-post {
-        display: none;  
-        flex-direction: column;
     }
     .card-one {
         font-size: 1rem;

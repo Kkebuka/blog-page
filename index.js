@@ -8,6 +8,5 @@ hamburger.addEventListener('click', function(){
 })
 
 link.addEventListener('click', function(){
-    linkDiv.style.display = 'flex'
-    alert('working')
+    linkDiv.style.display = 'none';
 })
